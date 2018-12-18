@@ -19,5 +19,10 @@ export class AdunitService {
     this.http.post(`${this.uri}/user/`, obj)
       .subscribe(res => console.log('Done'));
   }
+  getAdUnits() {
+    return this
+      .http
+      .get(`${this.uri}/user/`);
+  }
 
 }
